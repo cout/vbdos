@@ -1,300 +1,90 @@
-<HTML>
-<HEAD>
-   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
-</HEAD>
-<BODY BGCOLOR="#FFFFFF">
+Herein contains numerous Visual BASIC for DOS programs that I've been able to
+dig up from over the years. I figured I'd try to make a page of these, mainly
+for nostalgic reasons, and perhaps to help new programmers who are coming along
+in the world (though most of this stuff is so old it probably won't be of much
+use).
 
-<CENTER>
-<H1>
-Paul's Source Code Page</H1></CENTER>
-This is a list of all the programs that I have worked on in that past that
-I've been able to dig up from over the years. I figured I'd try to make
-a page of these, mainly for nostalgic reasons, and perhaps to help new
-programmers who are coming along in the world (though most of this stuff
-is so old it probably won't be of much use).
+Please do not email me concerning obtaining a copy of Visual BASIC for DOS.
+Yes, I own a copy, but my disks are corrupted, and are no longer installable.
+You may still be able to get a copy from [1]Microsoft, or get PowerBASIC and a
+windowing library and you can still have just as much fun.
 
-<P>Please do not email me concerning obtaining a copy of Visual BASIC for
-DOS.  Yes, I own a copy, but my disks are corrupted, and are no longer
-installable.  You may still be able to get a copy from
-<a href="http://www.microsoft.com">Microsoft</a>, or get PowerBASIC and
-a windowing library and you can still have just as much fun.
-<P>Except as noted in the documentation, all of the programs here that
-<i>I wrote</i> are now being released into public domain.&nbsp; Please note
-that there may be some programs here which are not fully mine; though I am not
-sure who the original authors are in all cases, I have tried to make that
-clear wherever I can.
+Except as noted in the documentation, all of the programs here that I wrote are
+now being released into public domain.  Please note that there may be some
+programs here which are not fully mine; though I am not sure who the original
+authors are in all cases, I have tried to make that clear wherever I can.
 
-<a name="cgi">
-<P><B><U><FONT COLOR="#FF0000">CGI</FONT></U></B>
-<BR>&nbsp;
-<TABLE BORDER COLS=2 WIDTH=100%>
-<TR>
-<TD WIDTH=10%>fwp</TD>
+PBPL
+----
 
-<TD>fwp is a small c program that redirects http requests.  Needs to be
-    recompiled for each specific server.  Does not handle absolute
-    pathnames or do any html parsing.<br>
-    <a href="cgi/fwp.c">fwp.c</a> (C source file, UNIX)<BR>
-    <a href="../ducttape.cgi/">ducttape.cgi</a> (Demonstration)
-</TD>
-</TR></TABLE>
+Paul Brannan's Programming language.  Similar to logo.  This one is from my
+middle school days.
 
-<a name="Utilities">
-<P><B><U><FONT COLOR="#FF0000">Utilities</FONT></U></B>
-<BR>&nbsp;
-<TABLE BORDER COLS=2 WIDTH="100%" >
-<TR>
-<TD WIDTH="10%">PBPL</TD>
+Colors
+------
+I think this displays all 256 colors in the default palette?
 
-<TD>Paul Brannan's Programming language.&nbsp; Similar to logo.&nbsp; This
-one is from my middle school days.
-<BR><A HREF="basic/pbpl.bas">pbpl.bas</A> (Visual BASIC for DOS source
-file)
-<BR><A HREF="vbasic/pbpl.bas">pbpl.bas</A> (ASCII Visual BASIC for DOS
-source file, newer version)
-<BR><A HREF="basic/pbpl.exe">pbpl.exe</A> (MS-DOS executable)</TD>
-</TR>
+MDI
+---
 
-<TR>
-<TD>Demo</TD>
+An MDI program for Visual BASIC for DOS.  I wrote this when I was learning
+Visual BASIC.  Includes a piano, a control panel, and other utilities.  Much of
+this is from the VBDOS books.
 
-<TD>A slide show program.&nbsp; Uses a hypertext-like format.&nbsp; Includes
-support for ModeX graphics and PCX files.&nbsp; Requires the TWK256 BGI
-library.&nbsp; Includes as examples my presentation for my 10th grade science
-fair project.
-<BR><A HREF="demo.zip">demo.zip</A> (ZIP archive with MS-DOS executables,
-examples, and Turbo C source code)</TD>
-</TR>
+Snooper
+-------
 
-<TR>
-<TD>SmartTerm</TD>
+A program that reads ASCII strings from binary files.  Based on a program found
+in Compute magazine.
 
-<TD>A terminal emulation program for MS-DOS that I wrote a while back.&nbsp;
-Fast enough to operate a 14.4k modem (maybe higher) on just a 286.&nbsp;
-Most programs can do this, but are slower when interpreting ANSI sequences
-and writing to the screen.&nbsp; Never completed.&nbsp; Based on an ANSI
-parser by Jason Farrell.
-<BR><A HREF="c/comm.zip">comm.zip</A> (ZIP archive with Turbo C source
-code).</TD>
-</TR>
+Mempeek
+-------
 
-<TR>
-<TD>mac2dos</TD>
+A program to "peek" into memory.
 
-<TD>Converts Macintosh text files to PC format.
-<BR><A HREF="c/mac2dos.c">mac2dos.c</A> (c source file)
-<BR><A HREF="c/mac2dos.exe">mac2dos.exe</A> (win32 binary)</TD>
-</TR>
+Port
+----
 
-<TR>
-<TD>unix2dos</TD>
+Outputs values to hardware ports.
 
-<TD>Converts Unix text files to PC format
-<BR><A HREF="c/unix2dos.c">unix2dos.c</A> (c source file)
-<BR><A HREF="c/unix2dos.exe">unix2dos.exe</A> (win32 binary)</TD>
-</TR>
+Piles
+-----
 
-<TR>
-<TD>dirlist</TD>
+A game I wrote back in late 1992.
 
-<TD>Directory listing with page break.
-<BR><A HREF="c/dirlist.c">dirlist.c</A> (Turbo C source file)</TD>
-</TR>
+Misc. Games
+-----------
 
-<TR>
-<TD>keyscan</TD>
+Miscellaneous games that I have written over the years.  I
+couldn't find source code.  Many were based on code out of books.
+Includes Bricks, Chomper, some slow flight simulators (from a book),
+Megaroid (not finished) and Target.
 
-<TD>Prints the ASCII/extended ASCII numbers for a given key.
-<BR><A HREF="c/keyscan.c">keyscan.c</A> (Turbo C source file)</TD>
-</TR>
-
-<TR>
-<TD>bmpload</TD>
-
-<TD>Loads BMP (Windows and OS/2 bitmap) files.
-<BR><A HREF="c/bmpload.c">bmpload.c</A> (Turbo C source file)</TD>
-</TR>
-
-<TR>
-<TD>pcxload</TD>
-
-<TD>Loads PCX files.
-<BR><A HREF="c/pcxload.c">pcxload.c</A> (Turbo C source file)</TD>
-</TR>
-
-<TR>
-<TD>tgaload</TD>
-
-<TD>Loads TGA (Targa) files.
-<BR><A HREF="c/tgaload.c">tgaload.c</A> (Turbo C source file)</TD>
-</TR>
-
-<TR>
-<TD>pictio</TD>
-
-<TD>Required for the graphic loaders.
-<BR><A HREF="c/pictio.c">pictio.c</A> (Turbo C source file)
-<BR><A HREF="c/pictio.h">pictio.h</A> (Turbo C header file)</TD>
-</TR>
-
-<TR>
-<TD>PBShell</TD>
-
-<TD>A program I wrote a long time ago designed to be a Norton Commander
-replacement (not clone).
-<BR><A HREF="c/pbshell.c">pbshell.c</A> (corrupt Turbo C source file)</TD>
-</TR>
-
-<TR>
-<TD>Colors</TD>
-
-<TD>I think this displays all 256 colors in the default palette?
-<BR><A HREF="vbasic/colors.bas">colors.bas</A> (Visual BASIC for DOS source
-file)</TD>
-</TR>
-
-<TR>
-<TD>MDI</TD>
-
-<TD>An MDI program for Visual BASIC for DOS.&nbsp; I wrote this when I
-was learning Visual BASIC.&nbsp; Includes a piano, a control panel, and
-other utilities.&nbsp; Much of this is from the VBDOS books.
-<BR><A HREF="vbasic/mdi.zip">mdi.zip</A> (ZIP archive with Visual BASIC
-for DOS source files)
-<BR><A HREF="vbasic/mdi2.zip">mdi2.zip</A> (the rest of the files?)</TD>
-</TR>
-
-<TR>
-<TD>Snooper</TD>
-
-<TD>A program that reads ASCII strings from binary files.&nbsp; Based on
-a program found in <I>Compute</I> magazine.
-<BR><A HREF="vbasic/snooper.bas">snooper.bas</A> (ASCII QuickBASIC source
-file)</TD>
-</TR>
-
-<TR>
-<TD>Mempeek</TD>
-
-<TD>A program to "peek" into memory.
-<BR><A HREF="basic/mempeek.bas">mempeek.bas</A> (GWBASIC source file)</TD>
-</TR>
-
-<TR>
-<TD>Port</TD>
-
-<TD>Outputs values to hardware ports.
-<BR><A HREF="basic/port.bas">port.bas</A> (GWBASIC source file)</TD>
-</TR>
-</TABLE>
-
-<a name="Games">
-<P><B><U><FONT COLOR="#FF0000">Games</FONT></U></B>
-
-<P>There are also a lot of games on my <A HREF="../../null/ti/index.html">TI-82
-page</A>.
-<BR>&nbsp;
-<TABLE BORDER COLS=2 WIDTH="100%" >
-<TR>
-<TD WIDTH="10%">Piles</TD>
-
-<TD>A game I wrote back in late 1992.
-<BR><A HREF="../../null/piles/index.html">web page</A>
-<BR><A HREF="vbasic/piles.zip">piles.zip</A> (Visual BASIC for DOS source
-code)</TD>
-</TR>
-
-<TR>
-<TD>Misc. Games</TD>
-
-<TD>Miscellaneous games that I have written over the years.&nbsp; I couldn't
-find source code.&nbsp; Many were based on code out of books.&nbsp; Includes
-Bricks, Chomper, some slow flight simulators (from a book), Megaroid (not
-finished) and Target.
-<BR><A HREF="games.zip">games.zip</A> (MS-DOS executables and GWBASIC source
-code)</TD>
-</TR>
-
-<TR>
-<TD>Bricks</TD>
-
-<TD>A breakout clone.
-<BR><A HREF="basic/bricks.bas">bricks.bas</A> (ASCII QuickBASIC source
-file, earlier version)
-<BR><A HREF="basic/bbricks2.bas">bbricks2.bas</A> (ASCII QuickBASIC source
-file)
-<BR><A HREF="vbasic/bricks.bas">bricks.bas</A> (ASCII QuickBASIC source
-file, newest version)</TD>
-</TR>
-
-<TR>
-<TD>Chomper</TD>
-
-<TD>This is a weird one.
-<BR><A HREF="vbasic/chomper.bas">chomper.bas</A> (Visual BASIC for DOS
-source file)
-<BR><A HREF="vbasic/chomperm.bas">chomperm.bas</A> (Visual BASIC for DOS
-source file, this one has music)
-<BR><A HREF="vbasic/chompers.bas">chompers.bas</A> (Visual BASIC for DOS
-source file, earlier version)</TD>
-</TR>
-
-<TR>
-<TD>Jackpot</TD>
-
-<TD>My very first game, dates all the way back to 1989.
-<BR><A HREF="basic/jackpot.bas">jackpot.bas</A> (corrupted GWBASIC source
-file)
-<BR><A HREF="basic/jackpot.exe">jackpot.exe</A> (MS-DOS executable)</TD>
-</TR>
-
-<TR>
-<TD>License</TD>
-
-<TD>Another early game, from 1990.
-<BR><A HREF="basic/license.bas">license.bas</A> (GWBASIC source file)</TD>
-</TR>
-
-<TR>
-<TD>Pingpong</TD>
-
-<TD>This is a pong clone, based on a version I found in a book from the
+Bricks - A breakout clone.
+  - bricks.bas (ASCII QuickBASIC source file, earlier version)
+  - bbricks2.bas (ASCII QuickBASIC source file)
+  - bricks.bas (ASCII QuickBASIC source file, newest version)
+Chomper - This is a weird one.
+  - chomper.bas (Visual BASIC for DOS source file)
+  - chomperm.bas (Visual BASIC for DOS source file, this one has music)
+  - chompers.bas (Visual BASIC for DOS source file, earlier version)
+Jackpot - My very first game, dates all the way back to 1989.
+  - jackpot.bas (corrupted GWBASIC source file)
+  - jackpot.exe (MS-DOS executable)
+License - Another early game, from 1990.
+  - license.bas (GWBASIC source file)
+Pingpong - This is a pong clone, based on a version I found in a book from the
 library.
-<BR><A HREF="basic/pingpong.bas">pingpong.bas</A> (ASCII QuickBASIC source
-file)
-<BR><A HREF="vbasic/pingpong.bas">pingpong.bas</A> (ASCII QuickBASIC source
-file, newer version)</TD>
-</TR>
+  - pingpong.bas (ASCII QuickBASIC source file)
+  - pingpong.bas (ASCII QuickBASIC source file, newer version)
+Starfire - A game with a neat 3D-like effect.
+  - starfire.bas (ASCII QuickBASIC source file)
+Target - This is a moving-target game.  Straight from a book.
+  - target.bas (GWBASIC source file)
+  - target.bas (Visual BASIC for DOS source file)
+  - target2.bas (GWBASIC source file, modified a bit)
+  - target2.bas (Visual BASIC fo DOS source file)
+Target2 - Based on Target, this one is a little more difficult, since the
+characters don't always move straight across.
+  - target2.bas (GWBASIC source file)
 
-<TR>
-<TD>Starfire</TD>
-
-<TD>A game with a neat 3D-like effect.
-<BR><A HREF="vbasic/starfire.bas">starfire.bas</A> (ASCII QuickBASIC source
-file)</TD>
-</TR>
-
-<TR>
-<TD>Target</TD>
-
-<TD>This is a moving-target game.&nbsp; Straight from a book.
-<BR><A HREF="basic/target.bas">target.bas</A> (GWBASIC source file)
-<BR><A HREF="vbasic/target.bas">target.bas</A> (Visual BASIC for DOS source
-file)
-<BR><A HREF="basic/target2.bas">target2.bas</A> (GWBASIC source file, modified
-a bit)
-<BR><A HREF="vbasic/target2.bas">target2.bas</A> (Visual BASIC fo DOS source
-file)</TD>
-</TR>
-
-<TR>
-<TD>Target2</TD>
-
-<TD>Based on Target, this one is a little more difficult, since the characters
-don't always move straight across.
-<BR><A HREF="basic/target2.bas">target2.bas</A> (GWBASIC source file)</TD>
-</TR>
-</TABLE>
-
-</HTML>
