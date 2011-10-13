@@ -1,0 +1,50 @@
+DEFINT A-O
+DEFINT Q-Z
+DEFLNG P
+DIM st AS STRING * 1
+pt = 0
+a$ = SPACE$(128)
+DEF SEG = &HA000
+Com$ = UCASE$(COMMAND$)
+IF RIGHT$(Com$, 4) <> ".PCX" THEN Com$ = Com$ + ".PCX"
+OPEN Com$ FOR BINARY AS #1
+GET #1, , a$
+st = " "
+SCREEN 13
+WHILE pt < 64000
+    GET #1, , st
+    ct = ASC(st)
+    IF (ct AND 192) <> 192 THEN
+        IF pt <> 0 THEN POKE pt, ct
+        pt = pt + 1
+    ELSE
+        ct = (ct AND 63)
+        GET #1, , st
+        dat = ASC(st)
+        IF dat <> 0 THEN
+            IF (320 - (pt MOD 320)) < ct THEN
+                ct = ct + (320 - (pt MOD 320))
+                LINE (pt MOD 320, pt \ 320)-(319, pt \ 320), dat
+            END IF
+            WHILE ct AND (pt < 64000)
+                ct = ct - 1
+                POKE pt, dat
+                pt = pt + 1
+            WEND
+        ELSE
+            pt = pt + ct
+        END IF
+    END IF
+WEND
+GET #1, , st
+OUT &H3C8, 0
+FOR I = 1 TO 768
+    GET #1, , st
+    OUT &H3C9, ASC(st) \ 4
+NEXT I
+CLOSE #1
+a$ = ""
+WHILE a$ = "": a$ = INKEY$: WEND
+SCREEN 0
+WIDTH 80
+
