@@ -9,7 +9,7 @@ Yes, I own a copy, but my disks are corrupted, and are no longer installable.
 You may still be able to get a copy from [1]Microsoft, or get PowerBASIC and a
 windowing library and you can still have just as much fun.
 
-Visual Basic for Dos 1.0 is available for free online from various places. one is [Visual Basic for Dos 1.0](https://vetusware.com/download/Visual%20Basic%20for%20MS-DOS%201.0/?id=151)
+Visual Basic for Dos 1.0 is available for free online from various places. one is [Visual Basic for Dos 1.0](https://vetusware.com/download/Visual%20Basic%20for%20MS-DOS%201.0/?id=151). Please note you will probably need [DosBox](https://www.dosbox.com/) to run VB Dos as well as most of the executable files. DosBox is also a project [here](https://www.sourceforge.net/projects/dosbox). You will probably also want [DosPanel](https://www.rathlev-home.de/index-e.html?home-e.html#dospanel) to set up all the apps to run.
 
 Except as noted in the documentation, all of the programs here that I wrote are
 now being released into public domain.  Please note that there may be some
